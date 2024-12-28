@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckovbok4v0v3k"]
+
+[ext_resource type="PackedScene" uid="uid://72vvavpsasub" path="res://scenes/discup.tscn" id="1_ymtni"]
+[ext_resource type="PackedScene" uid="uid://df6m1ppw0jfho" path="res://scenes/support.tscn" id="2_8sjqe"]
+[ext_resource type="PackedScene" uid="uid://cncrumfgt0d4a" path="res://scenes/number_1.tscn" id="3_siboc"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="discup" parent="." instance=ExtResource("1_ymtni")]
+
+[node name="support" parent="." instance=ExtResource("2_8sjqe")]
+
+[node name="number_1" parent="." instance=ExtResource("3_siboc")]
