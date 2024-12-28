@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ckovbok4v0v3k"]
+[gd_scene load_steps=14 format=3 uid="uid://ckovbok4v0v3k"]
 
 [ext_resource type="PackedScene" uid="uid://72vvavpsasub" path="res://scenes/discup.tscn" id="1_ymtni"]
 [ext_resource type="PackedScene" uid="uid://df6m1ppw0jfho" path="res://scenes/support.tscn" id="2_8sjqe"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://tour5yqu7his" path="res://scenes/number_7.tscn" id="10_44jta"]
 [ext_resource type="PackedScene" uid="uid://dmtd20njls6y5" path="res://scenes/number_8.tscn" id="11_ns3hi"]
 [ext_resource type="PackedScene" uid="uid://dbcsaw0ddccyi" path="res://scenes/number_9.tscn" id="12_0awt0"]
+[ext_resource type="PackedScene" uid="uid://ddko6jhxt2mn5" path="res://scenes/discdown.tscn" id="13_5wrql"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -55,3 +56,6 @@ transform = Transform3D(1, 0, 0, 0, 0.953344, 0.301887, 0, -0.301887, 0.953344, 
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="discdown" parent="." instance=ExtResource("13_5wrql")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.195, -0.92, 0.37)
