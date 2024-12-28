@@ -16,25 +16,36 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="discup" parent="." instance=ExtResource("1_ymtni")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.200694, -0.533694, 0.390238)
 
 [node name="support" parent="." instance=ExtResource("2_8sjqe")]
 
 [node name="number_0" parent="." instance=ExtResource("6_h0mvs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.230428, 0, 0.0782171)
 
 [node name="number_1" parent="." instance=ExtResource("3_siboc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00387806, 0, -0.00439495)
 
 [node name="number_2" parent="." instance=ExtResource("4_bdkv6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.183694, 0, 0.160631)
 
 [node name="number_3" parent="." instance=ExtResource("5_klvvv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15727, 0, 0.315943)
 
 [node name="number_4" parent="." instance=ExtResource("7_qgil3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0386385, 0, 0.395157)
 
 [node name="number_5" parent="." instance=ExtResource("8_h551p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.194574, 0, 0.536906)
 
 [node name="number_6" parent="." instance=ExtResource("9_7rrph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.192167, 0, 0.698843)
 
 [node name="number_7" parent="." instance=ExtResource("10_44jta")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.393889, 0, 0.609997)
 
 [node name="number_8" parent="." instance=ExtResource("11_ns3hi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.263601, 0, 0.458109)
 
 [node name="number_9" parent="." instance=ExtResource("12_0awt0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24859, 0, 0.239381)
