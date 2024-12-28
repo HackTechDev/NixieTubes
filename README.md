@@ -7,21 +7,30 @@
 
 Sélectionner le fichier blend
 Clicke de droite -> New Inhereted Scene
-Sélectionner le noeud root => Open Anyway
+Sélectionner le noeud root => Open in Editor => Open Anyway
 Sélectionner le mesh
 Scene => Save Scene As
 
-Changer la couleur Albedo
-
-Fermer les 2 onglet de l'objet 
+Fermer les 2 onglet de l'objet
 
 Réouvrir la scenbe
 
-Changer la couler 
+Changer la couleur Albedo
+
+Sauvegarder
+
 
 Fermer la scebe
 
-Sélectionner la scene 
+
+Dans la scène principale, sélectionne le noeud root
+
+Sélectionner la scene dans le filesystème
 
 Clique de droite : Instatiante
 
+
+
+Test : 
+Dans Scene
+Si on clique sur l'icone scene, elle s'ouvre 

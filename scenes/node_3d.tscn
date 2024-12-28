@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://ckovbok4v0v3k"]
+[gd_scene load_steps=7 format=3 uid="uid://ckovbok4v0v3k"]
 
 [ext_resource type="PackedScene" uid="uid://72vvavpsasub" path="res://scenes/discup.tscn" id="1_ymtni"]
 [ext_resource type="PackedScene" uid="uid://df6m1ppw0jfho" path="res://scenes/support.tscn" id="2_8sjqe"]
 [ext_resource type="PackedScene" uid="uid://cncrumfgt0d4a" path="res://scenes/number_1.tscn" id="3_siboc"]
+[ext_resource type="PackedScene" uid="uid://dqdt3aq7dxw45" path="res://scenes/number_2.tscn" id="4_bdkv6"]
+[ext_resource type="PackedScene" uid="uid://7ughu68pcpfl" path="res://scenes/number_3.tscn" id="5_klvvv"]
+[ext_resource type="PackedScene" uid="uid://cgvpdgf2a32vr" path="res://scenes/number_0.tscn" id="6_h0mvs"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -10,4 +13,10 @@
 
 [node name="support" parent="." instance=ExtResource("2_8sjqe")]
 
+[node name="number_0" parent="." instance=ExtResource("6_h0mvs")]
+
 [node name="number_1" parent="." instance=ExtResource("3_siboc")]
+
+[node name="number_2" parent="." instance=ExtResource("4_bdkv6")]
+
+[node name="number_3" parent="." instance=ExtResource("5_klvvv")]
