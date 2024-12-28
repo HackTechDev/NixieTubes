@@ -49,3 +49,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.263601, 0, 0.458109)
 
 [node name="number_9" parent="." instance=ExtResource("12_0awt0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24859, 0, 0.239381)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.953344, 0.301887, 0, -0.301887, 0.953344, 0, 1.3662, 4.08266)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
