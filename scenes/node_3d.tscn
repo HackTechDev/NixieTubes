@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ckovbok4v0v3k"]
+[gd_scene load_steps=10 format=3 uid="uid://ckovbok4v0v3k"]
 
 [ext_resource type="PackedScene" uid="uid://72vvavpsasub" path="res://scenes/discup.tscn" id="1_ymtni"]
 [ext_resource type="PackedScene" uid="uid://df6m1ppw0jfho" path="res://scenes/support.tscn" id="2_8sjqe"]
@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://dqdt3aq7dxw45" path="res://scenes/number_2.tscn" id="4_bdkv6"]
 [ext_resource type="PackedScene" uid="uid://7ughu68pcpfl" path="res://scenes/number_3.tscn" id="5_klvvv"]
 [ext_resource type="PackedScene" uid="uid://cgvpdgf2a32vr" path="res://scenes/number_0.tscn" id="6_h0mvs"]
+[ext_resource type="PackedScene" uid="uid://cgiwcyrfo7m07" path="res://scenes/number_4.tscn" id="7_qgil3"]
+[ext_resource type="PackedScene" uid="uid://brqnyph2kxwf4" path="res://scenes/number_5.tscn" id="8_h551p"]
+[ext_resource type="PackedScene" uid="uid://cn1a5cdhn3vqy" path="res://scenes/number_6.tscn" id="9_7rrph"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -20,3 +23,9 @@
 [node name="number_2" parent="." instance=ExtResource("4_bdkv6")]
 
 [node name="number_3" parent="." instance=ExtResource("5_klvvv")]
+
+[node name="number_4" parent="." instance=ExtResource("7_qgil3")]
+
+[node name="number_5" parent="." instance=ExtResource("8_h551p")]
+
+[node name="number_6" parent="." instance=ExtResource("9_7rrph")]
