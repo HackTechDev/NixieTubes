@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ckovbok4v0v3k"]
+[gd_scene load_steps=13 format=3 uid="uid://ckovbok4v0v3k"]
 
 [ext_resource type="PackedScene" uid="uid://72vvavpsasub" path="res://scenes/discup.tscn" id="1_ymtni"]
 [ext_resource type="PackedScene" uid="uid://df6m1ppw0jfho" path="res://scenes/support.tscn" id="2_8sjqe"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cn1a5cdhn3vqy" path="res://scenes/number_6.tscn" id="9_7rrph"]
 [ext_resource type="PackedScene" uid="uid://tour5yqu7his" path="res://scenes/number_7.tscn" id="10_44jta"]
 [ext_resource type="PackedScene" uid="uid://dmtd20njls6y5" path="res://scenes/number_8.tscn" id="11_ns3hi"]
+[ext_resource type="PackedScene" uid="uid://dbcsaw0ddccyi" path="res://scenes/number_9.tscn" id="12_0awt0"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -35,3 +36,5 @@
 [node name="number_7" parent="." instance=ExtResource("10_44jta")]
 
 [node name="number_8" parent="." instance=ExtResource("11_ns3hi")]
+
+[node name="number_9" parent="." instance=ExtResource("12_0awt0")]
