@@ -11,7 +11,6 @@ extends Node3D
 @onready var number_8: Node3D = $number_8
 @onready var number_9: Node3D = $number_9
 
-var numbers = [number_0, number_1, number_2, number_3, number_4, number_5, number_6, number_7, number_8, number_9]
 
 const NODE_PATHS = {
 	"number_0": "/root/Node3D/number_0",
@@ -29,8 +28,6 @@ const NODE_PATHS = {
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass	
-	var instanced_scene = find_child("number_8", true)
-	print( instanced_scene.get_path())
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
