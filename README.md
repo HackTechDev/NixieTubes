@@ -33,4 +33,5 @@ Clique de droite : Instatiante
 
 Test : 
 Dans Scene
-Si on clique sur l'icone scene, elle s'ouvre 
+Si on clique sur l'icone scene, elle s'ouvre  automatiquement
+
