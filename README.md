@@ -7,11 +7,12 @@
 
 Sélectionner le fichier blend
 Clicke de droite -> New Inhereted Scene
-Sélectionner le noeud root => Open in Editor => Open Anyway
+Depuis la nouvelle scène, Sélectionner le noeud root => Open in Editor => Open Anyway
 Sélectionner le mesh
 Scene => Save Scene As
 
 Fermer les 2 onglet de l'objet
+
 
 Réouvrir la scenbe
 

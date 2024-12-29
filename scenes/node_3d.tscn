@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ckovbok4v0v3k"]
+[gd_scene load_steps=17 format=3 uid="uid://ckovbok4v0v3k"]
 
 [ext_resource type="Script" path="res://scenes/node_3d.gd" id="1_if0am"]
 [ext_resource type="PackedScene" uid="uid://72vvavpsasub" path="res://scenes/discup.tscn" id="1_ymtni"]
@@ -14,12 +14,14 @@
 [ext_resource type="PackedScene" uid="uid://dmtd20njls6y5" path="res://scenes/number_8.tscn" id="11_ns3hi"]
 [ext_resource type="PackedScene" uid="uid://dbcsaw0ddccyi" path="res://scenes/number_9.tscn" id="12_0awt0"]
 [ext_resource type="PackedScene" uid="uid://ddko6jhxt2mn5" path="res://scenes/discdown.tscn" id="13_5wrql"]
+[ext_resource type="PackedScene" uid="uid://b2jegrcv6v8ng" path="res://scenes/front.tscn" id="15_o2rgm"]
+[ext_resource type="PackedScene" uid="uid://d0skbnuqtnr6t" path="res://scenes/back.tscn" id="16_n61pw"]
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_if0am")
 
 [node name="discup" parent="." instance=ExtResource("1_ymtni")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.200694, -0.533694, 0.301955)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.200694, -0.296645, 0.301955)
 
 [node name="support" parent="." instance=ExtResource("2_8sjqe")]
 
@@ -60,4 +62,10 @@ transform = Transform3D(1, 0, 0, 0, 0.953344, 0.301887, 0, -0.301887, 0.953344, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 
 [node name="discdown" parent="." instance=ExtResource("13_5wrql")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.195, -0.92, 0.28691)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.195, -0.751763, 0.28691)
+
+[node name="front" parent="." instance=ExtResource("15_o2rgm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.197339, 0.485213, 0.726323)
+
+[node name="back" parent="." instance=ExtResource("16_n61pw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.217441, 0.676119, 0)
