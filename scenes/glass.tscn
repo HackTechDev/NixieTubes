@@ -1,4 +1,14 @@
-[gd_scene load_steps=4 format=4 uid="uid://c87qqym5g52ik"]
+[gd_scene load_steps=6 format=4 uid="uid://c87qqym5g52ik"]
+
+[ext_resource type="Shader" path="res://scenes/glass.gdshader" id="1_0gsyj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n7sq4"]
+render_priority = 0
+shader = ExtResource("1_0gsyj")
+shader_parameter/albedo = Color(1, 1, 1, 0)
+shader_parameter/roughness = 0.15
+shader_parameter/normal_strength = 1.0
+shader_parameter/edge_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bj3a8"]
 resource_name = "wire_006135058.001"
@@ -44,5 +54,6 @@ shadow_mesh = SubResource("ArrayMesh_4bhtl")
 
 [node name="Cylinder031" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_n7sq4")
 mesh = SubResource("ArrayMesh_mhm1s")
 skeleton = NodePath("")

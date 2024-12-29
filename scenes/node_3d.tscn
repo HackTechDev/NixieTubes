@@ -72,4 +72,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.197339, 0.485213, 0.726323
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.217441, 0.676119, 0)
 
 [node name="glass" parent="." instance=ExtResource("17_8iinp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8047, 0, 0.28029)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.195302, 0, 0.28029)
