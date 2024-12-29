@@ -2,31 +2,37 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g5k3w"]
 resource_name = "wire_027177088.001"
+transparency = 1
 cull_mode = 2
 albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mefqp"]
 resource_name = "wire_028149177"
+transparency = 1
 cull_mode = 2
 albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lurkg"]
 resource_name = "wire_027177088"
+transparency = 1
 cull_mode = 2
 albedo_color = Color(0.905882, 0.905882, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_difr2"]
 resource_name = "wire_027177027"
+transparency = 1
 cull_mode = 2
 albedo_color = Color(0.905882, 0.905882, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xoanf"]
 resource_name = "wire_028149177.001"
+transparency = 1
 cull_mode = 2
 albedo_color = Color(0.905882, 0.905882, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2pk0p"]
 resource_name = "wire_027177027.001"
+transparency = 1
 cull_mode = 2
 albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
 

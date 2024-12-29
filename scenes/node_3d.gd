@@ -25,7 +25,7 @@ const NODE_PATHS = {
 	"number_9": "/root/Node3D/number_9"
 }
 
-const ALPHA_COLOR = Color(1, 1, 1, 0.9)  # Blanc avec alpha 50%
+const ALPHA_COLOR = Color(1, 1, 1, 0.5)  # Blanc avec alpha 50%
 const OPAQUE_COLOR = Color(1, 0, 0, 1)   # Blanc opaque
 
 # Called when the node enters the scene tree for the first time.
@@ -53,12 +53,12 @@ func _update_visibility(active_action: String) -> void:
 			
 			# Appliquer l'alpha 50 % ou l'opacité complète sur le  MeshInstance3D enfant
 			if action == active_action:
-				mesh_instance.visible = true
+				#mesh_instance.visible = true
 				material.albedo_color = OPAQUE_COLOR
 				print ("opaque")
 			else:
 				# Rend invisible 
-				mesh_instance.visible = false
+				#mesh_instance.visible = false
 				
 				# mais j'aimerai mieux lui appliquer une couleur alpha
 				material.albedo_color = ALPHA_COLOR
