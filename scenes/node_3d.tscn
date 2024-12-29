@@ -17,7 +17,7 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="discup" parent="." instance=ExtResource("1_ymtni")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.200694, -0.533694, 0.390238)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.200694, -0.533694, 0.301955)
 
 [node name="support" parent="." instance=ExtResource("2_8sjqe")]
 
@@ -58,4 +58,4 @@ transform = Transform3D(1, 0, 0, 0, 0.953344, 0.301887, 0, -0.301887, 0.953344, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 
 [node name="discdown" parent="." instance=ExtResource("13_5wrql")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.195, -0.92, 0.37)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.195, -0.92, 0.28691)
