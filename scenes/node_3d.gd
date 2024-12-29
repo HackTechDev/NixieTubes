@@ -25,8 +25,8 @@ const NODE_PATHS = {
 	"number_9": "/root/Node3D/number_9"
 }
 
-const ALPHA_COLOR = Color(1, 1, 1, 0.5)  # Blanc avec alpha 50%
-const OPAQUE_COLOR = Color(1, 1, 1, 1)   # Blanc opaque
+const ALPHA_COLOR = Color(1, 1, 1, 0.9)  # Blanc avec alpha 50%
+const OPAQUE_COLOR = Color(1, 0, 0, 1)   # Blanc opaque
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -40,9 +40,27 @@ func _process(delta: float) -> void:
 
 func _update_visibility(active_action: String) -> void:
 	for action in NODE_PATHS.keys():
-		var mesh_instance = get_node(NODE_PATHS[action])
-		# Le nœud correspondant à l'action devient visible, les autres deviennent invisibles
-		if action == active_action:
-			mesh_instance.visible = true
-		else:
-			mesh_instance.visible = false
+		var parent_node = get_node(NODE_PATHS[action])
+		
+		# Rechercher un MeshInstance3D enfant
+		var mesh_instance = parent_node.get_child(0) if parent_node.get_child_count() > 0 else null
+		if mesh_instance is MeshInstance3D:
+			# Récupération ou création du matériel de base
+			var material = mesh_instance.material_override
+			if material == null:
+				material = StandardMaterial3D.new()
+				mesh_instance.material_override = material
+			
+			# Appliquer l'alpha 50 % ou l'opacité complète sur le  MeshInstance3D enfant
+			if action == active_action:
+				mesh_instance.visible = true
+				material.albedo_color = OPAQUE_COLOR
+				print ("opaque")
+			else:
+				# Rend invisible 
+				mesh_instance.visible = false
+				
+				# mais j'aimerai mieux lui appliquer une couleur alpha
+				material.albedo_color = ALPHA_COLOR
+				
+				print("alpha")
