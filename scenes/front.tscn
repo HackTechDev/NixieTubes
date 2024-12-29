@@ -4,7 +4,7 @@
 resource_name = "wire_225088199"
 transparency = 1
 cull_mode = 2
-albedo_color = Color(0.136792, 0.970335, 0.830128, 1)
+albedo_color = Color(0.113725, 0.458824, 0.505882, 1)
 roughness = 0.821115
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_yij2m"]

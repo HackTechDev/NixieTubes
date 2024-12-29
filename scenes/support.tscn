@@ -123,7 +123,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_qf3p3")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7tluc"]
-albedo_color = Color(1, 0.129412, 1, 1)
+albedo_color = Color(0.113725, 0.458824, 0.505882, 1)
 
 [node name="support" type="Node3D"]
 
