@@ -25,6 +25,9 @@ const NODE_PATHS = {
 	"number_9": "/root/Node3D/number_9"
 }
 
+const ALPHA_COLOR = Color(1, 1, 1, 0.5)  # Blanc avec alpha 50%
+const OPAQUE_COLOR = Color(1, 1, 1, 1)   # Blanc opaque
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass	
@@ -33,6 +36,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	for action in NODE_PATHS.keys():
 		if Input.is_action_just_pressed(action):
-			var mesh_instance = get_node(NODE_PATHS[action])
-			mesh_instance.visible = not mesh_instance.visible
-	
+			_update_visibility(action)
+
+func _update_visibility(active_action: String) -> void:
+	for action in NODE_PATHS.keys():
+		var mesh_instance = get_node(NODE_PATHS[action])
+		# Le nœud correspondant à l'action devient visible, les autres deviennent invisibles
+		if action == active_action:
+			mesh_instance.visible = true
+		else:
+			mesh_instance.visible = false
