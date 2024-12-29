@@ -80,3 +80,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17, -1.525, 0.265)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
 transform = Transform3D(0.774519, -0.224144, -0.591506, 0.612372, 0.5, 0.612372, 0.158494, -0.836516, 0.524519, -3, 5, 3)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 15.0
+offset_top = 561.0
+offset_right = 414.0
+offset_bottom = 631.0
+text = "Display a number: [0]...[9]
+Move camera:  [Q] Left / [D] Right / [S] Down / [Z] Up
+"
