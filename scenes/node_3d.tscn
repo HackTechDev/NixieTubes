@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ckovbok4v0v3k"]
+[gd_scene load_steps=19 format=3 uid="uid://ckovbok4v0v3k"]
 
 [ext_resource type="Script" path="res://scenes/node_3d.gd" id="1_if0am"]
 [ext_resource type="PackedScene" uid="uid://72vvavpsasub" path="res://scenes/discup.tscn" id="1_ymtni"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://b2jegrcv6v8ng" path="res://scenes/front.tscn" id="15_o2rgm"]
 [ext_resource type="PackedScene" uid="uid://d0skbnuqtnr6t" path="res://scenes/back.tscn" id="16_n61pw"]
 [ext_resource type="PackedScene" uid="uid://c87qqym5g52ik" path="res://scenes/glass.tscn" id="17_8iinp"]
+[ext_resource type="PackedScene" uid="uid://dcakdu1xtj3fs" path="res://scenes/plug.tscn" id="18_yg4ef"]
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_if0am")
@@ -73,3 +74,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.217441, 0.676119, 0)
 
 [node name="glass" parent="." instance=ExtResource("17_8iinp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.195302, 0, 0.28029)
+
+[node name="plug" parent="." instance=ExtResource("18_yg4ef")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17, -1.525, 0.265)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(0.774519, -0.224144, -0.591506, 0.612372, 0.5, 0.612372, 0.158494, -0.836516, 0.524519, -3, 5, 3)

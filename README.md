@@ -19,6 +19,8 @@
 
 
 
+* Ajouter un model 3D Blender en tant que Scène.
+
 Sélectionner le fichier blend
 Clicke de droite -> New Inhereted Scene
 Depuis la nouvelle scène, Sélectionner le noeud root => Open in Editor => Open Anyway
