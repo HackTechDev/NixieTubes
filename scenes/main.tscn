@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://cj2mxku7g8bg6"]
+
+[ext_resource type="Script" path="res://scenes/cam_gimbal.gd" id="1_0cb44"]
+[ext_resource type="Script" path="res://scenes/camera_3d.gd" id="2_sjbrw"]
+[ext_resource type="PackedScene" uid="uid://ckovbok4v0v3k" path="res://scenes/lamp.tscn" id="3_0rpnr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_aicb8"]
+size = Vector3(10, 0.2, 5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uah7p"]
+albedo_color = Color(0.16735, 0.644165, 0.751623, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(0.774519, -0.224144, -0.591506, 0.612372, 0.5, 0.612372, 0.158494, -0.836516, 0.524519, -6.12483, 1.33143, 1.17154)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.62415, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 15.0
+offset_top = 561.0
+offset_right = 414.0
+offset_bottom = 631.0
+text = "Display a number: [0]...[9]
+Move camera:  [Q] Left / [D] Right / [S] Down / [Z] Up
+"
+
+[node name="cam_gimbal" type="Node3D" parent="."]
+script = ExtResource("1_0cb44")
+
+[node name="Camera3D" type="Camera3D" parent="cam_gimbal"]
+transform = Transform3D(1, 0, 0, 0, 0.885734, 0.464193, 0, -0.464193, 0.885734, 0, 0.676916, 4.49922)
+script = ExtResource("2_sjbrw")
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.0214036, -0.79522, 0.605944, -0.0280718, 0.606322, 0.794724, -0.999377, 0, -0.0353007, 5.86657, 3.35152, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.22907, 0)
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327, -2.37, 0.12)
+mesh = SubResource("BoxMesh_aicb8")
+surface_material_override/0 = SubResource("StandardMaterial3D_uah7p")
+
+[node name="lamp1" parent="." instance=ExtResource("3_0rpnr")]
+
+[editable path="lamp1"]

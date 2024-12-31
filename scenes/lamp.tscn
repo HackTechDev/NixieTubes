@@ -1,0 +1,73 @@
+[gd_scene load_steps=19 format=3 uid="uid://ckovbok4v0v3k"]
+
+[ext_resource type="Script" path="res://scenes/lamp.gd" id="1_tg57t"]
+[ext_resource type="PackedScene" uid="uid://72vvavpsasub" path="res://scenes/discup.tscn" id="2_h4aqg"]
+[ext_resource type="PackedScene" uid="uid://df6m1ppw0jfho" path="res://scenes/support.tscn" id="3_xmlhq"]
+[ext_resource type="PackedScene" uid="uid://cgvpdgf2a32vr" path="res://scenes/number_0.tscn" id="4_0evf2"]
+[ext_resource type="PackedScene" uid="uid://cncrumfgt0d4a" path="res://scenes/number_1.tscn" id="5_t8psw"]
+[ext_resource type="PackedScene" uid="uid://dqdt3aq7dxw45" path="res://scenes/number_2.tscn" id="6_w3780"]
+[ext_resource type="PackedScene" uid="uid://7ughu68pcpfl" path="res://scenes/number_3.tscn" id="7_oee4h"]
+[ext_resource type="PackedScene" uid="uid://cgiwcyrfo7m07" path="res://scenes/number_4.tscn" id="8_ahxmf"]
+[ext_resource type="PackedScene" uid="uid://brqnyph2kxwf4" path="res://scenes/number_5.tscn" id="9_y4jlf"]
+[ext_resource type="PackedScene" uid="uid://cn1a5cdhn3vqy" path="res://scenes/number_6.tscn" id="10_8f1cx"]
+[ext_resource type="PackedScene" uid="uid://tour5yqu7his" path="res://scenes/number_7.tscn" id="11_8qu57"]
+[ext_resource type="PackedScene" uid="uid://dmtd20njls6y5" path="res://scenes/number_8.tscn" id="12_ei4ll"]
+[ext_resource type="PackedScene" uid="uid://dbcsaw0ddccyi" path="res://scenes/number_9.tscn" id="13_jxlod"]
+[ext_resource type="PackedScene" uid="uid://ddko6jhxt2mn5" path="res://scenes/discdown.tscn" id="14_0ctek"]
+[ext_resource type="PackedScene" uid="uid://b2jegrcv6v8ng" path="res://scenes/front.tscn" id="15_n3wwm"]
+[ext_resource type="PackedScene" uid="uid://d0skbnuqtnr6t" path="res://scenes/back.tscn" id="16_0fwdq"]
+[ext_resource type="PackedScene" uid="uid://c87qqym5g52ik" path="res://scenes/glass.tscn" id="17_ajycm"]
+[ext_resource type="PackedScene" uid="uid://dcakdu1xtj3fs" path="res://scenes/plug.tscn" id="18_2dvin"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_tg57t")
+
+[node name="discup" parent="." instance=ExtResource("2_h4aqg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.200694, -0.296645, 0.301955)
+
+[node name="support" parent="." instance=ExtResource("3_xmlhq")]
+
+[node name="number_0" parent="." instance=ExtResource("4_0evf2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.230428, 0, 0.0782171)
+
+[node name="number_1" parent="." instance=ExtResource("5_t8psw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00387806, 0, -0.00439495)
+
+[node name="number_2" parent="." instance=ExtResource("6_w3780")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.183694, 0, 0.160631)
+
+[node name="number_3" parent="." instance=ExtResource("7_oee4h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15727, 0, 0.315943)
+
+[node name="number_4" parent="." instance=ExtResource("8_ahxmf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0386385, 0, 0.395157)
+
+[node name="number_5" parent="." instance=ExtResource("9_y4jlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.194574, 0, 0.536906)
+
+[node name="number_6" parent="." instance=ExtResource("10_8f1cx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.192167, 0, 0.698843)
+
+[node name="number_7" parent="." instance=ExtResource("11_8qu57")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.393889, 0, 0.609997)
+
+[node name="number_8" parent="." instance=ExtResource("12_ei4ll")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.263601, 0, 0.458109)
+
+[node name="number_9" parent="." instance=ExtResource("13_jxlod")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24859, 0, 0.239381)
+
+[node name="discdown" parent="." instance=ExtResource("14_0ctek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.195, -0.751763, 0.28691)
+
+[node name="front" parent="." instance=ExtResource("15_n3wwm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.197339, 0.485213, 0.726323)
+
+[node name="back" parent="." instance=ExtResource("16_0fwdq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.217441, 0.676119, 0)
+
+[node name="glass" parent="." instance=ExtResource("17_ajycm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.195302, 0, 0.28029)
+
+[node name="plug" parent="." instance=ExtResource("18_2dvin")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17, -1.525, 0.265)

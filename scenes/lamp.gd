@@ -1,28 +1,16 @@
 extends Node3D
 
-@onready var number_0: Node3D = $number_0
-@onready var number_1: Node3D = $number_1
-@onready var number_2: Node3D = $number_2
-@onready var number_3: Node3D = $number_3
-@onready var number_4: Node3D = $number_4
-@onready var number_5: Node3D = $number_5
-@onready var number_6: Node3D = $number_6
-@onready var number_7: Node3D = $number_7
-@onready var number_8: Node3D = $number_8
-@onready var number_9: Node3D = $number_9
-
-
 const NODE_PATHS = {
-	"number_0": "/root/Node3D/number_0",
-	"number_1": "/root/Node3D/number_1",
-	"number_2": "/root/Node3D/number_2",
-	"number_3": "/root/Node3D/number_3",
-	"number_4": "/root/Node3D/number_4",
-	"number_5": "/root/Node3D/number_5",
-	"number_6": "/root/Node3D/number_6",
-	"number_7": "/root/Node3D/number_7",
-	"number_8": "/root/Node3D/number_8",
-	"number_9": "/root/Node3D/number_9"
+	"number_0": "/root/Node3D/lamp1/number_0",
+	"number_1": "/root/Node3D/lamp1/number_1",
+	"number_2": "/root/Node3D/lamp1/number_2",
+	"number_3": "/root/Node3D/lamp1/number_3",
+	"number_4": "/root/Node3D/lamp1/number_4",
+	"number_5": "/root/Node3D/lamp1/number_5",
+	"number_6": "/root/Node3D/lamp1/number_6",
+	"number_7": "/root/Node3D/lamp1/number_7",
+	"number_8": "/root/Node3D/lamp1/number_8",
+	"number_9": "/root/Node3D/lamp1/number_9"
 }
 
 const ALPHA_COLOR = Color(0, 1, 0, 0.5)  # Blanc avec alpha 50%
