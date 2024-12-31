@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://ckovbok4v0v3k"]
 
-[ext_resource type="Script" path="res://scenes/lamp.gd" id="1_tg57t"]
+[ext_resource type="Script" path="res://scenes/lamp2.gd" id="1_1jwjp"]
 [ext_resource type="PackedScene" uid="uid://72vvavpsasub" path="res://scenes/discup.tscn" id="2_h4aqg"]
 [ext_resource type="PackedScene" uid="uid://df6m1ppw0jfho" path="res://scenes/support.tscn" id="3_xmlhq"]
 [ext_resource type="PackedScene" uid="uid://cgvpdgf2a32vr" path="res://scenes/number_0.tscn" id="4_0evf2"]
@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://dcakdu1xtj3fs" path="res://scenes/plug.tscn" id="18_2dvin"]
 
 [node name="Node3D" type="Node3D"]
-script = ExtResource("1_tg57t")
+script = ExtResource("1_1jwjp")
 
 [node name="discup" parent="." instance=ExtResource("2_h4aqg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.200694, -0.296645, 0.301955)
