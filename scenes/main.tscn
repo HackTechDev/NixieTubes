@@ -33,7 +33,7 @@ Move camera:  [Q] Left / [D] Right / [S] Down / [Z] Up
 script = ExtResource("1_0cb44")
 
 [node name="Camera3D" type="Camera3D" parent="cam_gimbal"]
-transform = Transform3D(1, 0, 0, 0, 0.885734, 0.464193, 0, -0.464193, 0.885734, 0, 0.676916, 4.49922)
+transform = Transform3D(1, 0, 0, 0, 0.885734, 0.464193, 0, -0.464193, 0.885734, 0, 2.14114, 6.30801)
 script = ExtResource("2_sjbrw")
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="."]
