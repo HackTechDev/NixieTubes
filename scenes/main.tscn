@@ -1,12 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://cj2mxku7g8bg6"]
+[gd_scene load_steps=11 format=3 uid="uid://cj2mxku7g8bg6"]
 
 [ext_resource type="Script" path="res://scenes/cam_gimbal.gd" id="1_0cb44"]
 [ext_resource type="Script" path="res://scenes/camera_3d.gd" id="2_sjbrw"]
 [ext_resource type="PackedScene" uid="uid://ckovbok4v0v3k" path="res://scenes/lamp.tscn" id="3_0rpnr"]
 [ext_resource type="Script" path="res://scenes/lamp1.gd" id="4_up1tt"]
+[ext_resource type="Script" path="res://scenes/lamp2.gd" id="5_01d7w"]
+[ext_resource type="Script" path="res://scenes/lamp3.gd" id="5_4xxe0"]
+[ext_resource type="Script" path="res://scenes/lamp4.gd" id="6_rvkcw"]
+[ext_resource type="Script" path="res://scenes/lamp5.gd" id="7_rohqo"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_aicb8"]
-size = Vector3(10, 0.2, 5)
+size = Vector3(20, 0.2, 5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uah7p"]
 albedo_color = Color(0.16735, 0.644165, 0.751623, 1)
@@ -51,10 +55,31 @@ mesh = SubResource("BoxMesh_aicb8")
 surface_material_override/0 = SubResource("StandardMaterial3D_uah7p")
 
 [node name="lamp1" parent="." instance=ExtResource("3_0rpnr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.33105, 0, 0)
 script = ExtResource("4_up1tt")
 
 [node name="lamp2" parent="." instance=ExtResource("3_0rpnr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.07513, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0214, 0, 0)
+script = ExtResource("5_01d7w")
+
+[node name="lamp3" parent="." instance=ExtResource("3_0rpnr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6323, 0, 0)
+script = ExtResource("5_4xxe0")
+
+[node name="lamp4" parent="." instance=ExtResource("3_0rpnr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.206284, 0, 0)
+script = ExtResource("6_rvkcw")
+
+[node name="lamp5" parent="." instance=ExtResource("3_0rpnr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6065, 0, 0)
+script = ExtResource("7_rohqo")
+
+[node name="lamp6" parent="." instance=ExtResource("3_0rpnr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.50678, 0, 0)
 
 [editable path="lamp1"]
 [editable path="lamp2"]
+[editable path="lamp3"]
+[editable path="lamp4"]
+[editable path="lamp5"]
+[editable path="lamp6"]
