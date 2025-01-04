@@ -84,6 +84,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.50678, 0, 0)
 stream = ExtResource("10_3465b")
 autoplay = true
 
+[node name="TimerMinuteUnite" type="Timer" parent="."]
+autostart = true
+
+[node name="TimerMinuteDizaine" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="TimerMinuteUnite" to="lamp6" method="_on_timer_timeout"]
+[connection signal="timeout" from="TimerMinuteDizaine" to="lamp5" method="_on_timer_minute_dizaine_timeout"]
+
 [editable path="lamp1"]
 [editable path="lamp2"]
 [editable path="lamp3"]

@@ -16,15 +16,20 @@ const NODE_PATHS = {
 const ALPHA_COLOR = Color(0, 1, 0, 0.5)  # Blanc avec alpha 50%
 const OPAQUE_COLOR = Color(1, 0, 0, 1)   # Blanc opaque
 
+var current_time: int = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass	
+	_update_visibility("number_8")
+		
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	for action in NODE_PATHS.keys():
-		if Input.is_action_just_pressed(action):
-			_update_visibility(action)
+	pass
+		
+	#for action in NODE_PATHS.keys():
+		#if Input.is_action_just_pressed(action):
+			#_update_visibility(action)
 
 func _update_visibility(active_action: String) -> void:
 	for action in NODE_PATHS.keys():
@@ -52,3 +57,12 @@ func _update_visibility(active_action: String) -> void:
 				#material.albedo_color = ALPHA_COLOR
 				
 				print("alpha")
+
+
+func _on_timer_timeout() -> void:
+	current_time += 1
+	if current_time == 10:
+		current_time = 0
+	var text = str(current_time)
+	print(text)
+	_update_visibility("number_" + text)
