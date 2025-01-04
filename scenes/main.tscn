@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://cj2mxku7g8bg6"]
+[gd_scene load_steps=13 format=3 uid="uid://cj2mxku7g8bg6"]
 
 [ext_resource type="Script" path="res://scenes/cam_gimbal.gd" id="1_0cb44"]
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_guvds"]
 [ext_resource type="Script" path="res://scenes/camera_3d.gd" id="2_sjbrw"]
 [ext_resource type="PackedScene" uid="uid://ckovbok4v0v3k" path="res://scenes/lamp.tscn" id="3_0rpnr"]
 [ext_resource type="Script" path="res://scenes/lamp1.gd" id="4_up1tt"]
@@ -8,6 +9,7 @@
 [ext_resource type="Script" path="res://scenes/lamp3.gd" id="5_4xxe0"]
 [ext_resource type="Script" path="res://scenes/lamp4.gd" id="6_rvkcw"]
 [ext_resource type="Script" path="res://scenes/lamp5.gd" id="7_rohqo"]
+[ext_resource type="AudioStream" uid="uid://nwv12avcswu1" path="res://scenes/SteinsGate Opening Theme - Hacking to the Gate (Full Version).mp3" id="10_3465b"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_aicb8"]
 size = Vector3(20, 0.2, 5)
@@ -16,6 +18,7 @@ size = Vector3(20, 0.2, 5)
 albedo_color = Color(0.16735, 0.644165, 0.751623, 1)
 
 [node name="Node3D" type="Node3D"]
+script = ExtResource("1_guvds")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
 transform = Transform3D(0.774519, -0.224144, -0.591506, 0.612372, 0.5, 0.612372, 0.158494, -0.836516, 0.524519, -6.12483, 1.33143, 1.17154)
@@ -32,7 +35,7 @@ offset_right = 414.0
 offset_bottom = 631.0
 text = "Display a number: [0]...[9]
 Move camera:  [Q] Left / [D] Right / [S] Down / [Z] Up
-"
+Volume : [W] [X]"
 
 [node name="cam_gimbal" type="Node3D" parent="."]
 script = ExtResource("1_0cb44")
@@ -76,6 +79,10 @@ script = ExtResource("7_rohqo")
 
 [node name="lamp6" parent="." instance=ExtResource("3_0rpnr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.50678, 0, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_3465b")
+autoplay = true
 
 [editable path="lamp1"]
 [editable path="lamp2"]

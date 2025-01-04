@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://nwv12avcswu1"
+path="res://.godot/imported/SteinsGate Opening Theme - Hacking to the Gate (Full Version).mp3-6ae2318d0117f00902c54fd524af369f.mp3str"
+
+[deps]
+
+source_file="res://scenes/SteinsGate Opening Theme - Hacking to the Gate (Full Version).mp3"
+dest_files=["res://.godot/imported/SteinsGate Opening Theme - Hacking to the Gate (Full Version).mp3-6ae2318d0117f00902c54fd524af369f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
